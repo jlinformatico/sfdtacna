@@ -1,0 +1,251 @@
+body{
+	background: #fff;
+	margin: 0;
+}
+#contenedor{
+ width: 100%;
+ margin: 0 auto;
+}
+header{
+	background: #535353;
+	width: 100%;
+	height: auto;
+	padding-bottom: 3px;
+}
+nav{
+	width: 800px;
+	height: auto;
+	background: transparent;
+	margin:0 auto;
+}
+#central{
+	width: 100%;
+	height: auto;
+	background: url("../img/fondo01.png");
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin: 0 auto;
+	text-align: center;
+}
+#dato_evento{
+	background: transparent;
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+}
+#dato_evento section{
+	padding:70px 20px;
+}
+#dato_evento h1,h2,h3{
+	font-family: 'Fredoka One', cursive;
+	margin: 0;
+	text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+	-webkit-text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+	-moz-text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+	-o-text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+}
+#dato_evento h1{
+	color: #fff;
+	font-size: 35px;
+}
+#dato_evento h2{
+	color: #FFD03C;
+	font-size: 30px;
+}
+#dato_evento h3{
+	color: #fff;
+}
+#dato_evento b{
+	color: #FFD03C;
+}
+#descripcion{
+	background: transparent;
+	padding: 10px;
+	border-top: 2px solid #B88232;
+	color: #fff;
+	margin-top: 15px;
+}
+#descripcion p{
+	margin: 0;
+	text-align: center;
+	font-family: arial;
+	font-size: 12px;
+	text-shadow: 0px 0px 4px #000;
+	-webkit-text-shadow: 0px 0px 4px #000;
+	-moz-text-shadow: 0px 0px 4px #000;
+	-o-text-shadow: 0px 0px 4px #000;
+	font-family: 'Istok Web', sans-serif;
+}
+#registro{
+	width: 100%;
+	height:auto;
+	background: transparent;
+}
+#info{
+	width: 100%;
+	height: auto;
+	background: transparent;
+	padding: 15px 0 15px 0;
+	text-align: center;
+}
+#info section{
+	width: 400px;
+	height: auto;
+	background: transparent;
+	margin: 0 auto;
+	display: inline-table;
+}
+#info section p{
+	margin:0;
+	font-family: 'Istok Web', sans-serif;
+	text-align: justify;
+	padding: 15px;
+	color: #797979;
+}
+#imagen_evento{
+	background:transparent;
+	width: 100%;
+}
+#imagen_evento img{
+	width: 50%;
+}
+#cronograma{
+	width: 100%;
+	background: transparent;
+}
+#cronograma section{
+	margin: 0 auto;
+	text-align: center;
+}
+#cronograma section img{
+	width: 50%;
+}
+#lugar{
+	width: 100%;
+	min-height: 300px;
+	background: #43C04D;
+}
+footer{
+	width: 100%;
+	min-height: 300px;
+	background: #13AE6E;
+}
+
+/*FORMULARIO*/
+input[type="text"]:focus, textarea:focus, input[type="search"]:focus {outline: none;}
+input[type="email"]:focus, textarea:focus, input[type="search"]:focus {outline: none;}
+
+form{
+	width: 600px;
+	height: auto;
+	margin: 0 auto;
+	background: transparent;
+	font-family: 'Noto Sans', sans-serif;
+}
+#registro a{
+	text-decoration: none;
+	font-family: 'Noto Sans', sans-serif;
+}
+#botones{
+	text-align: center;
+	background: #808080;
+	padding: 30px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+#titulo_form{
+	background:#13AE6E;
+	width: 300px;
+	color: #FFF;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 30px;
+	margin: 0 auto;
+}
+#titulo_form:hover{
+	background: #16BE79;
+}
+#Mensaje_form{
+	background:#13AE6E;
+	width: 500px;
+	color: #FFF;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 30px;
+	margin: 0 auto;
+	display: none;
+}
+.input01{
+	width: 193px;
+	font-size: 12px;
+	border:1px solid #b5b5b5;
+	padding: 10px 20px 10px 35px;
+	border-radius: 5px;
+	position: relative;
+	color: #585858;
+	display: none;
+}
+.input01:focus{
+	border:1px solid #1CF169;
+	-webkit-border:1px solid #1CF169;
+	-moz-border:1px solid #1CF169;
+	-o-border:1px solid #1CF169;
+	-ms-border:1px solid #1CF169;
+}
+#email{
+	background: #F6F6F6 url("../img/mail.jpg") no-repeat 10px center;
+display: inline-block;
+}
+#nombre{
+	background: #F6F6F6 url("../img/name.jpg") no-repeat 10px center;
+display: inline-block;
+}
+#dni{
+	background: #F6F6F6 url("../img/mail.jpg") no-repeat 10px center;
+}
+#celular{
+	background: #F6F6F6 url("../img/mail.jpg") no-repeat 10px center;
+}
+#organizacion{
+	background: #F6F6F6 url("../img/mail.jpg") no-repeat 10px center;
+}
+#certificado{
+	width: 250px;
+	color: #fff;
+	display: inline-block;
+}
+#reg{
+	width: 100%;
+	text-align: center;
+	background:transparent;
+	margin-top: -25px;
+	margin-bottom: 5px;
+}
+#registrar{
+	width: 200px;
+	padding: 10px;
+	cursor: pointer;
+	background: #535353;
+	color:#fff;
+	border: none;
+	display: inline-block;
+	font-size: 20px;
+
+}
+#registrar:hover{
+	background: #7E7E7E;
+}
+#result {
+	width: 126px;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #FFF;
+	background: #FF8F00;
+	display: none;
+}
+/*END FORMULARIO*/
