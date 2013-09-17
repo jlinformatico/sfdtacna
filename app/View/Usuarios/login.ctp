@@ -1,8 +1,8 @@
 <div class="row-fluid">
-				<section class="login-container"><!-- login -->
-					<div class="login-header">
-						<h3>Ingreso al Sistema</h3>
-					</div>
+	<section class="login-container"><!-- login -->
+		<div class="login-header">
+			<h3>Ingreso al Sistema</h3>
+		</div>
 					<?php echo $this->Session->flash(); ?>
 					<div class="login-content">
 					<?php echo $this->Form->create('Usuario', array('action' => 'login')); ?>
