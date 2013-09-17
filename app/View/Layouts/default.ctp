@@ -40,7 +40,13 @@
 						<li <?php if($menu == 'informe'):?> class="active" <?php endif;?> >
 							<?php echo $this->Html->link('Informe','/informe');?>
 						</li>
+						<li <?php if($menu == 'web'):?> class="active" <?php endif;?> >
+							<?php echo $this->Html->link('Ver página','/web',array('target'=>'_blank'));?>
+						</li>
 					</ul>
+					<p class="navbar-text pull-right right-menu">
+						<?php echo $this->Html->link('Cerrar sesión',array('controller'=>'usuarios','action'=>'logout'),array('class'=>'navbar-link'));?>
+					</p>
 				</div><!--/.nav-collapse -->
 			</div>
 		</div>
