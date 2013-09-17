@@ -5,7 +5,7 @@ class UsuariosController extends AppController {
 
 	function beforeFilter() {    
 		parent::beforeFilter();     
-		$this->Auth->allow('user_add','index');
+		$this->Auth->allow('user_add');
 	}
 	
 	public function login(){

@@ -5,6 +5,13 @@ class Usuario extends AppModel {
 
 	public $displayField = 'username';
 
+	public function beforeSave($options = array()) {
+		if (isset($this->data[$this->alias]['password'])) {
+			$this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
+		}
+		return true;
+	}
+
 	public $hasMany = array(
 		'Auspicio' => array(
 			'className' => 'Auspicio',

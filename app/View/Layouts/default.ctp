@@ -47,11 +47,9 @@
 	</div>
 	<!-- Fin menu -->
 
-	<div id="container">
-		<div id="content">
-			<?php echo $this->Session->flash(); ?>
-			<?php echo $this->fetch('content'); ?>
-		</div>
+	<div class="container">
+		<?php echo $this->Session->flash(); ?>
+		<?php echo $this->fetch('content'); ?>
 	</div>
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
