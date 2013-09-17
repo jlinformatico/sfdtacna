@@ -1,35 +1,52 @@
 <?php
-/**
- * Application level Controller
- *
- * This file is application-wide controller file. You can put all
- * application-wide controller-related methods here.
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.Controller
- * @since         CakePHP(tm) v 0.2.9
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
+
 App::uses('Controller', 'Controller');
 
-/**
- * Application Controller
- *
- * Add your application-wide methods in the class below, your controllers
- * will inherit them.
- *
- * @package		app.Controller
- * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
- */
 class AppController extends Controller {
+	public $helpers = array('Html', 'Form', 'Session');
+
+	public $components = array(
+		'Session',
+        'Auth' => array(
+			'authenticate' => array(
+			'Form' => array( 
+				'userModel' => 'Usuario', 
+				'fields' => array( 
+					'username' => 'username', 
+					'password' => 'password' 
+					), 
+				), 
+			),
+			'loginAction' => array('controller' => 'usuarios','action' => 'login'),	
+			'loginRedirect' => array('controller' => 'panel', 'action' => 'index'),
+			'logoutRedirect' => array('controller' => 'usuarios', 'action' => 'login')
+			//'authorize' => array('Controller')
+		)
+    );
+
+	function fecha_hora(){
+		$gmt_peru = -5;
+		$fecha_gmt = gmmktime(gmdate("H")+$gmt_peru,gmdate("i"),gmdate("s"),gmdate("n"),gmdate("j"),gmdate("Y"));
+		$fecha_hora = gmdate('Y-n-j H:i:s',$fecha_gmt);
+		return $fecha_hora;
+	}
+	
+	function fecha(){
+		$gmt_peru = -5;
+		$fecha_gmt = gmmktime(gmdate("H")+$gmt_peru,gmdate("i"),gmdate("s"),gmdate("n"),gmdate("j"),gmdate("Y"));
+		$fecha = gmdate('Y-n-j',$fecha_gmt);
+		return $fecha;
+	}
+	
+	function hora(){
+		$gmt_peru = -5;
+		$fecha_gmt = gmmktime(gmdate("H")+$gmt_peru,gmdate("i"),gmdate("s"),gmdate("n"),gmdate("j"),gmdate("Y"));
+		$hora = gmdate('H:i:s',$fecha_gmt);
+		return $hora;
+	}
+
+	function ucfirst_uppercase($c){
+    	$cadena = strtr(strtoupper($c),"àáâãäåæçèéêëìíîïðñòóôõöøùüú", "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÜÚ");
+    	return $cadena;
+	}
 }
