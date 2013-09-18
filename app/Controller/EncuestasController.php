@@ -3,6 +3,8 @@ App::uses('AppController', 'Controller');
 
 class EncuestasController extends AppController {
 
+	public $uses = array('Encuesta','Pregunta');
+	
 	public function index() {
 		$this->Encuesta->recursive = 0;
 		$this->set('encuestas', $this->Encuesta->find('all'));
@@ -50,7 +52,7 @@ class EncuestasController extends AppController {
 		}
 	}
 
-	public function edit($id = null) {
+	public function encuesta_edit($id = null) {
 		if (!$this->Encuesta->exists($id)) {
 			throw new NotFoundException(__('Invalid encuesta'));
 		}
@@ -64,9 +66,10 @@ class EncuestasController extends AppController {
 		} else {
 			$options = array('conditions' => array('Encuesta.' . $this->Encuesta->primaryKey => $id));
 			$this->request->data = $this->Encuesta->find('first', $options);
+			$this->set('preguntas',$this->Pregunta->find('all',array('conditions'=>array(
+												'Pregunta.encuesta_id'=>$id
+												))));
 		}
-		$usuarios = $this->Encuesta->Usuario->find('list');
-		$this->set(compact('usuarios'));
 	}
 
 	public function delete($id = null) {

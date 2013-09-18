@@ -45,23 +45,46 @@
 		<?php echo $this->Html->image("image_evento.png");?>
 	</div>
 	<section>
-
-	<p><b>QUE ES ESTE EVENTO?</b><br>SFD es una celebración anual sobre el Software Libre! Cada año hay cientos de equipos organizando el Software Freedom Day en diferentes países y ciudades. Organizar el evento de SFD puede ser muy divertido! En este sitio y en su wiki, encontrarás muchas guías y recursos que probablemente te ayuden a crear un equipo para organizar el evento de Software Freedom Day
-	......................................dlsds dsd sdsldsld</p>
+		<h3>¿QUÉ ES ESTE EVENTO?</h3>
+		<p>
+			El Software Freedom Day (SFD) es una celebración anual sobre el Software Libre a nivel mundial. Se realiza desde el año 2004 y se adoptó su realización el día 21 de Septiembre de cada año.</p>
+		<p>
+			Su principal objetivo es promover el uso del software libre, dando a conocer al público en general su filosofía, alcances, avances y desarrollo enseñando a las personas a conectarse, crear y compartir un mundo digital que es participativo, transparente y sostenible.
+		</p>
 	</section>
 	<section>
-	<p>SFD es una celebración anual sobre el Software Libre! Cada año hay cientos de equipos organizando el Software Freedom Day en diferentes países y ciudades. Organizar el evento de SFD puede ser muy divertido! En este sitio y en su wiki, encontrarás muchas guías y recursos que probablemente te ayuden a crear un equipo para organizar el evento de Software Freedom Day.</p>
+		<p>A tal fin, las diversas comunidades locales de software libre (en cada país/ciudad/localidad), organizan simultáneamente eventos donde se difunde el software libre y motiva su adopción de este y estándares abiertos a traves de charlas, ponencias, talleres y mesas redondas sobre temática local, nacional y latinoamericana en torno al Software Libre, en toda su gama de expresiones: artística, académica, empresarial y social</p>
 	</section>
 </div>
 <div id="cronograma">
-	<section>
-	<h1>Cronograma</h1>
+	<h3>CRONOGRAMA</h3>
 	<?php echo $this->Html->image("cronograma.png");?>
-	</section>
 </div>
 <div id="lugar">
-
+	<h3>LUGAR</h3>
+	<p>El Evento se Desarrolllará en el <strong>CENTRO CULTURAL MUNICIPAL ALTO DE LA ALIANZA </strong>el Sábado 21 de Septiembre desde las 9 am hasta las 8 pm.
+	</p>
+	<iframe width="547" height="312" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.pe/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=centro+cultural+tacna+vigil&amp;aq=&amp;sll=-17.993986,-70.244476&amp;sspn=0.001472,0.002642&amp;t=m&amp;ie=UTF8&amp;hq=centro+cultural&amp;hnear=Vigil,+Tacna&amp;ll=-17.993826,-70.244533&amp;spn=0.003571,0.00456&amp;z=17&amp;output=embed"></iframe>
+	<?php echo $this->Html->image('lugar.png');?>
 </div>
+<div id="organizadores">
+	<h3>ORGANIZADORES</h3>
+	<?php echo $this->Html->image("logo_basadrinux.png");?>
+</div>
+<div id="patrocinan">
+	<h3>PATROCINAN</h3>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/logo-unjbg.png"),"http://www.unjbg.edu.pe",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/logo-mdaa.png"),"http://www.munialtoalianza.gob.pe",array('escape'=>false));?>
+</div>
+<div id="auspicios">
+	<h3>AUSPICIAN</h3>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/radio-cmf.png",array('width'=>250)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/suri.jpg",array('width'=>200)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/logo-ebenezer.png",array('width'=>380)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/coyotex.png",array('width'=>380)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/super_stereo.png",array('width'=>250)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/idw.png",array('width'=>250)),"http://www.idw.com.pe/inicio/",array('escape'=>false));?>
+</div> 
 <footer>
 	
 </footer>
