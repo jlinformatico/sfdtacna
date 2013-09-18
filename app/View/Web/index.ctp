@@ -17,20 +17,22 @@
 	</div>
 </div>
 <div id="registro">
-	<FORM ACTION="Registrar_inscribcion.php" METHOD="POST" id="fo3" name="fo3" onSubmit="return limpiar()">
+	<?php echo $this->Form->create('Inscripto', array('url'=>'/inscriptos/ajax_registrar', 'id'=>'fo3', 'name'=>'fo3', 
+		'inputDefaults'=>array('div'=>false, 'label'=>false))); ?>
+	<!-- <FORM ACTION="Registrar_inscribcion.php" METHOD="POST" id="fo3" name="fo3" onSubmit="return limpiar()"> -->
 		<div id="reg">
 			<INPUT id="registrar" TYPE="SUBMIT" VALUE="REGISTRAR" />
 		</div>
 		<div id="botones">
-		  	<INPUT id="email" class="input01" NAME="email" TYPE="text" required placeholder="Email" onfocus="javascript:box_actions.open()"/>
-	      	<INPUT id="nombre" class="input01" NAME="nombre" TYPE="TEXT" required placeholder="Nombre" onfocus="javascript:box_actions.open()"/>
-	      	<INPUT id="dni" class="input01" NAME="dni" TYPE="TEXT" required placeholder="Dni" />
-	      	<INPUT id="celular" class="input01" NAME="celular" TYPE="TEXT" required placeholder="Celular" />
-	      	<INPUT id="organizacion" class="input01" NAME="organizacion" TYPE="TEXT" required placeholder="Organización/C. Estudio/Empresa" />
+		  	<INPUT id="email" class="input01" NAME="data[Inscripto][email]" TYPE="text" required placeholder="Email" onfocus="javascript:box_actions.open()"/> 
+	      	<INPUT id="nombre" class="input01" NAME="data[Inscripto][nombre_completo]" TYPE="TEXT" required placeholder="Nombre" onfocus="javascript:box_actions.open()"/>
+	      	<INPUT id="dni" class="input01" NAME="data[Inscripto][dni]" TYPE="TEXT" required placeholder="Dni" />
+	      	<INPUT id="celular" class="input01" NAME="data[Inscripto][telefono]" TYPE="TEXT" required placeholder="Celular" />
+	      	<INPUT id="organizacion" class="input01" NAME="data[Inscripto][organizacion]" TYPE="TEXT" required placeholder="Organización/C. Estudio/Empresa" />
 	      	<div id="certificado">
 	      		<label>Certificado (S/. 20)</label>
-	      		<label><input type="radio" name="certificado" value="SI"> Sí</label>
-	      		<label><input type="radio" name="certificado" value="NO" checked=""> No</label>
+	      		<label><input type="radio" name="data[Inscripto][certificado]" value="1"> Sí</label>
+	      		<label><input type="radio" name="data[Inscripto][certificado]" value="0" checked > No</label>
 	      	</div>
 	      			<!--<INPUT id="registrar" TYPE="SUBMIT" VALUE="Registrar" />-->
 	      	<div id="result"></div>
@@ -63,3 +65,20 @@
 <footer>
 	
 </footer>
+<script type="text/javascript">
+    $("#fo3").submit(function(event){
+		 event.preventDefault();
+		 $.ajax({
+		 	type		:'POST',
+		 	url 		:$(this).attr('action'),
+		 	data 		:$(this).serialize(),
+		 	success 	:function(respuesta){
+		 					$('#result').html(respuesta);
+	               			$('#result').css('display','inline-block');
+	               			$('#fo3').each (function(){
+							  this.reset();
+						});		
+		 		}
+			});
+	});
+</script>
