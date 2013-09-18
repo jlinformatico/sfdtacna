@@ -9,7 +9,9 @@ class InscriptosController extends AppController{
 	}
 
 	public function index(){
-		$inscriptos = $this->Inscripto->find('all', array('order'=>'fecha_registro DESC'));
+		$inscriptos = $this->Inscripto->find('all', array(
+			'conditions'=>array('Inscripto.flag'=>0),
+			'order'=>'fecha_registro DESC'));
 		$this->set('inscriptos', $inscriptos);	
 	}
 
@@ -38,11 +40,11 @@ class InscriptosController extends AppController{
 	}
 
 
-	public function registrar($tipo = null){
+	public function registrar(){
 		if($this->request->is('post')){
 			$this->Inscripto->create();
 			
-			
+
 		}
 	}
 
