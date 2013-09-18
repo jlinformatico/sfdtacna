@@ -62,7 +62,7 @@
 </div>
 <div id="lugar">
 	<h3>LUGAR</h3>
-	<p>El Evento se Desarrolllará en el <strong>CENTRO CULTURAL MUNICIPAL ALTO DE LA ALIANZA </strong>el Sábado 21 de Septiembre desde las 9 am hasta las 8 pm.
+	<p>El Evento se Desarrolllará en el <strong>CENTRO CULTURAL MUNICIPAL ALTO DE LA ALIANZA </strong><br />el Sábado 21 de Septiembre desde las 9 am hasta las 8 pm.
 	</p>
 	<iframe width="547" height="312" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.pe/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=centro+cultural+tacna+vigil&amp;aq=&amp;sll=-17.993986,-70.244476&amp;sspn=0.001472,0.002642&amp;t=m&amp;ie=UTF8&amp;hq=centro+cultural&amp;hnear=Vigil,+Tacna&amp;ll=-17.993826,-70.244533&amp;spn=0.003571,0.00456&amp;z=17&amp;output=embed"></iframe>
 	<?php echo $this->Html->image('lugar.png');?>
@@ -78,12 +78,20 @@
 </div>
 <div id="auspicios">
 	<h3>AUSPICIAN</h3>
-	<?php echo $this->Html->link($this->Html->image("patrocinan/radio-cmf.png",array('width'=>250)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/radio-cmf.png",array('width'=>220)),"#",array('escape'=>false));?>
 	<?php echo $this->Html->link($this->Html->image("patrocinan/suri.jpg",array('width'=>200)),"#",array('escape'=>false));?>
-	<?php echo $this->Html->link($this->Html->image("patrocinan/logo-ebenezer.png",array('width'=>380)),"#",array('escape'=>false));?>
-	<?php echo $this->Html->link($this->Html->image("patrocinan/coyotex.png",array('width'=>380)),"#",array('escape'=>false));?>
-	<?php echo $this->Html->link($this->Html->image("patrocinan/super_stereo.png",array('width'=>250)),"#",array('escape'=>false));?>
-	<?php echo $this->Html->link($this->Html->image("patrocinan/idw.png",array('width'=>250)),"http://www.idw.com.pe/inicio/",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/logo-ebenezer.png",array('width'=>350)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/coyotex.png",array('width'=>350)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/super_stereo.png",array('width'=>220)),"#",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/idw.png",array('width'=>220)),"http://www.idw.com.pe/inicio/",array('escape'=>false));?>
+</div>
+<div id="codigo">
+	<?php echo $this->Html->image("pie1.png");?>
+	<?php echo $this->Html->image("pie2.png");?>
+	<p>
+		El contenido de la web está bajo la licencia GPL. 
+		El código fuente de esta página está disponible en <a href="https://github.com/flisoltacna" target="_blank">GitHub</a> bajo la GNU Public License 3.0.
+	</p>
 </div> 
 <footer>
 	

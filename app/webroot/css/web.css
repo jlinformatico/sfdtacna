@@ -2,6 +2,7 @@ body{
 	background: #fff;
 	margin: 0;
 	font-size: 14px;
+	font-family: 'Istok Web',sans-serif;
 }
 #contenedor{
  width: 100%;
@@ -136,7 +137,7 @@ nav{
 	min-height: 300px;
 	background: #43C04D;
 }*/
-#lugar, #cronograma, #organizadores, #patrocinan, #auspicios{
+#lugar, #cronograma, #organizadores, #patrocinan, #auspicios, #codigo{
 	width:100%;
 	text-align: center;
 	padding: 15px 0 20px 0;
@@ -161,7 +162,7 @@ nav{
 	width: 80%;
 }
 #organizadores{
-	background: #00C0F3;
+	background: #81DAF5;
 }
 #organizadores img {
     display: inline-block;
@@ -194,6 +195,24 @@ nav{
 	-moz-transition: .2s;
 	-webkit-transition: .2s;
 	transition: .2s;	
+}
+#codigo{
+	background: #F0F0F0;
+	padding-bottom: 1px;
+}
+#codigo img{
+	float:left;
+	margin:10px;
+	width: 100px;
+
+}
+#codigo p{
+	text-align: left;	
+	color: #4E4E4E;
+}
+#codigo a{
+	color:#B10000;
+	text-decoration: none;
 }
 footer{
 	width: 100%;
