@@ -42,9 +42,26 @@ class InscriptosController extends AppController{
 
 	public function registrar(){
 		if($this->request->is('post')){
-			$this->Inscripto->create();
-			
+			$this->request->data['Inscripto']['fecha_registro'] = $this->fecha_hora(); 
 
+			$email = $this->request->data['Inscripto']['email'];
+			$dni = $this->request->data['Inscripto']['dni'];
+
+			$inscriptos = $this->Inscripto->find('first', array('conditions'=>array(
+				'Inscripto.email'=>$email, 
+				'Inscripto.dni'=>$dni)));
+
+			if(empty($inscriptos)){
+				$this->Inscripto->create();
+				if($this->Inscripto->save($this->request->data)){
+					$this->Session->setFlash('Se registró con éxito','flash_success');
+					$this->redirect(array('action'=>'index'));
+				}else{
+					$this->Session->setFlash('Hubo un error al guardar','flash_failure');
+				}	
+			}else{
+				$this->Session->setFlash('Ya se encuentra registrado','flash_warning');
+			}
 		}
 	}
 
