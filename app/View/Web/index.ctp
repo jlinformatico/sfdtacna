@@ -6,7 +6,7 @@
 		<section>
 			<h1>SOFTWARE FREEDOM DAY<b> TACNA</b></h1>
 			<h2>21 de Septiembre</h2>
-			<h3>9am-1pm</h3>
+			<h3>9am-6pm</h3>
 			<h1>LUGAR: <br/> Centro Cultural Municipal Alto de la Alianza</h1>
 		</section>
 	</div>
@@ -19,11 +19,21 @@
 			<INPUT id="registrar" TYPE="SUBMIT" VALUE="REGISTRAR" />
 		</div>
 		<div id="botones">
-		  	<INPUT id="email" class="input01" NAME="data[Inscripto][email]" TYPE="text" required placeholder="Email" onfocus="javascript:box_actions.open()"/> 
-	      	<INPUT id="nombre" class="input01" NAME="data[Inscripto][nombre_completo]" TYPE="TEXT" required placeholder="Nombre" onfocus="javascript:box_actions.open()"/>
-	      	<INPUT id="dni" pattern="\d{8}" maxlength="8" class="input01" NAME="data[Inscripto][dni]" TYPE="TEXT" required placeholder="Dni" />
-	      	<INPUT id="celular" class="input01" NAME="data[Inscripto][telefono]" TYPE="TEXT" required placeholder="Celular" />
-	      	<INPUT id="organizacion" class="input01" NAME="data[Inscripto][organizacion]" TYPE="TEXT" required placeholder="Organización/C. Estudio/Empresa" />
+			<div class="clearfix">
+		  		<INPUT id="email" class="input01" NAME="data[Inscripto][email]" TYPE="text" required placeholder="Email" onfocus="javascript:box_actions.open()"/> 
+		  	</div>
+		  	<div class="clearfix">
+	      		<INPUT id="nombre" class="input01" NAME="data[Inscripto][nombre_completo]" TYPE="TEXT" required placeholder="Nombre" onfocus="javascript:box_actions.open()"/>
+	      	</div>
+	      	<div class="clearfix">
+	      		<INPUT id="dni" pattern="\d{8}" maxlength="8" class="input01" NAME="data[Inscripto][dni]" TYPE="TEXT" required placeholder="DNI" />
+	      	</div>
+	      	<div class="clearfix">
+	      		<INPUT id="celular" class="input01" NAME="data[Inscripto][telefono]" TYPE="TEXT" required placeholder="Celular" />
+	      	</div>
+	      	<div class="clearfix">
+	      		<INPUT id="organizacion" class="input01" NAME="data[Inscripto][organizacion]" TYPE="TEXT" required placeholder="Organización / C. Estudio / Empresa" />
+	      	</div>
 	      	<div id="certificado">
 	      		<label>Certificado (S/. 20)</label>
 	      		<label><input type="radio" name="data[Inscripto][certificado]" value="1"> Sí</label>

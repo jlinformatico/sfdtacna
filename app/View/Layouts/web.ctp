@@ -8,7 +8,7 @@
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css(array('web'));
-		echo $this->Html->script(array('jquery-1.3.min','mainFunctions','formulario'));
+		echo $this->Html->script(array('jquery-1.3.min','formulario'));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
