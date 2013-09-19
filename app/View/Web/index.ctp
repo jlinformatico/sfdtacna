@@ -107,12 +107,34 @@
 	<?php echo $this->Html->image("pie2.png");?>
 	<p>
 		El contenido de la web está bajo la licencia GPL. 
-		El código fuente de esta página está disponible en <a href="https://github.com/flisoltacna" target="_blank">GitHub</a> bajo la GNU Public License 3.0.
+		El código fuente de esta página está disponible en <a href="https://github.com/jlinformatico/sfdtacna" target="_blank">GitHub</a> bajo la GNU Public License 3.0.
 	</p>
+</div>
+<div id="encabezado">
+		<div class="header">
+			<div id="logo">
+				<?php echo $this->Html->image("logo.png");?>
+			</div>
+			<div id="reloj">
+				<center>	
+					<div id="falta">FALTAN:</div>
+					<section>
+					<!--Cuenta Regresiva-->		
+						<div id="defaultCountdown2"></div>
+					</section>
+				 	<!--fin cuenta regresiva--> 
+				 	<?php echo $this->Html->link($this->Html->image("ico-inicio.png"),'#central',array('escape'=>false));?>
+				 </center>
+			</div>
+		</div>		
 </div> 
-<footer>
-	
-</footer>
+<script type="text/javascript">
+	$(function () {
+	    var austDay = new Date();
+	    date_end2 = new Date(2013, 9 - 1, 21);
+	    $('#defaultCountdown2').countdown({until: date_end2});
+	});
+</script>
 <script type="text/javascript">
     $("#fo3").submit(function(event){
 		 event.preventDefault();
@@ -130,3 +152,9 @@
 			});
 	});
 </script>
+<?php
+	$this->Html->css('jquery.countdown',null,array('inline'=>false));
+	$this->Html->script('jquery.countdown',array('inline'=>false));
+	$this->Html->script('jquery.countdown-es',array('inline'=>false));
+	$this->Html->script('scrolltop',array('inline'=>false));
+?>

@@ -17,6 +17,7 @@
 	?>
 </head>
 <body>
+	<div id="fb-root"></div>
 	<!-- MENU -->
 	<?php $menu = $this->params['controller']; ?>
 	<div class="navbar navbar-inverse navbar-fixed-top">

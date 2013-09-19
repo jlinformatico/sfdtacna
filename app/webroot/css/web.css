@@ -205,6 +205,7 @@ nav{
 #codigo{
 	background: #F0F0F0;
 	padding-bottom: 1px;
+	margin-bottom: 120px;
 }
 #codigo img{
 	float:left;
@@ -222,7 +223,7 @@ nav{
 }
 footer{
 	width: 100%;
-	min-height: 300px;
+	min-height: 150px;
 	background: #13AE6E;
 }
 
@@ -362,4 +363,75 @@ display: inline-block;
 	background: #FF8F00;
 	display: none;
 }
-/*END FORMULARIO*/
+#encabezado{
+	width: 100%;
+	height: auto;
+	background: #13AE6E;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+}
+.header{
+	background: transparent;
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+#reloj img{
+	duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+}
+#reloj img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+}
+#reloj{
+	width: 100%;
+	height: auto;
+	background: transparent;
+	padding-bottom: 0;
+	text-transform: uppercase;
+}
+#reloj section{
+	display: inline-block;
+	text-align: center;
+}
+#falta{
+	font-family: 'Istok Web', sans-serif;
+	font-weight: normal;
+	color: white;
+	font-size: 20px;
+}
+#defaultCountdown2 
+{ 
+	width: 500px; 
+	height: 45px; 
+	float:left; 
+	background: transparent;
+	color:#fff;
+	font-family: 'Istok Web', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	padding: 5px;border: none;
+}
+#logo{
+
+	width: 300px;
+	height: 100%;
+	float: left;
+	text-align:center;
+}
+#logo img{
+	height: auto;
+	padding-top: 20px;
+}
