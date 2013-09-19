@@ -29,9 +29,9 @@ class InscriptosController extends AppController{
 			$this->Inscripto->create();
 
 			if($this->Inscripto->save($this->request->data))
-				$save = 1;
-			else
 				$save = 0;
+			else
+				$save = 1;
 		}else{
 			$save = 2;
 		}
