@@ -36,7 +36,7 @@
 								<?php 
 									echo $this->Html->link('<i class="icon-user icon-white"></i> ', array('action'=>'encuesta_asignar', $encuesta['Encuesta']['id']), array('class'=>'btn btn-success','title'=>'Asignar encuesta','escape'=>false)); 
 
-									echo $this->Html->link('<i class="icon-pencil icon-white"></i> ', array('action'=>'Editar encuesta', $encuesta['Encuesta']['id']), array('class'=>'btn btn-warning','title'=>'Asignar encuesta','escape'=>false));
+									echo $this->Html->link('<i class="icon-pencil icon-white"></i> ', array('action'=>'encuesta_edit', $encuesta['Encuesta']['id']), array('class'=>'btn btn-warning','title'=>'Asignar encuesta','escape'=>false));
 
 									echo $this->Html->link('<i class="icon-search icon-white"></i> ', array('action'=>'encuesta_asignar', $encuesta['Encuesta']['id']), array('class'=>'btn btn-info','title'=>'Resultados','escape'=>false));
 
