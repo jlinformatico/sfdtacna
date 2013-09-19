@@ -92,9 +92,9 @@ nav{
 	padding: 15px 0 15px 0;
 	text-align: center;
 }
-#info h3, #cronograma h3, #lugar h3, #organizadores h3, #patrocinan h3, #auspicios h3{
+#info h3, #cronograma h3, #lugar h3, #organizadores h3, #patrocinan h3, #auspicios h3, #facebook h3{
 	font-family: 'Fredoka One', cursive;
-	margin: 0;
+	margin: 0 0 15px 0;
 	color: #FFD03C;
 	font-size: 26px;
 }
@@ -140,7 +140,7 @@ nav{
 	min-height: 300px;
 	background: #43C04D;
 }*/
-#lugar, #cronograma, #organizadores, #patrocinan, #auspicios, #codigo{
+#lugar, #cronograma, #organizadores, #patrocinan, #auspicios, #codigo,#facebook{
 	width:100%;
 	text-align: center;
 	padding: 15px 0 20px 0;

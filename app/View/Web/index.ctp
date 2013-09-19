@@ -102,6 +102,11 @@
 	<?php echo $this->Html->link($this->Html->image("patrocinan/super_stereo.png",array('width'=>220)),"#",array('escape'=>false));?>
 	<?php echo $this->Html->link($this->Html->image("patrocinan/idw.png",array('width'=>220)),"http://www.idw.com.pe/inicio/",array('escape'=>false));?>
 </div>
+<div id="facebook">
+	<h3>BÚSCANOS EN FACEBOOK</h3>
+	<div class="fb-like-box" data-href="https://www.facebook.com/sfdtacnaperu" data-width="900" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+</div>
+
 <div id="codigo">
 	<?php echo $this->Html->image("pie1.png");?>
 	<?php echo $this->Html->image("pie2.png");?>
@@ -152,6 +157,13 @@
 			});
 	});
 </script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <?php
 	$this->Html->css('jquery.countdown',null,array('inline'=>false));
 	$this->Html->script('jquery.countdown',array('inline'=>false));
