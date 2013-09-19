@@ -3,11 +3,6 @@ App::uses('AppController', 'Controller');
 
 class InscriptosController extends AppController{
 
-	function beforeFilter() {    
-		parent::beforeFilter();     
-		$this->Auth->allow('index');
-	}
-
 	public function index(){
 		$inscriptos = $this->Inscripto->find('all', array(
 			'conditions'=>array('Inscripto.flag'=>0),
@@ -29,9 +24,9 @@ class InscriptosController extends AppController{
 			$this->Inscripto->create();
 
 			if($this->Inscripto->save($this->request->data))
-				$save = 1;
-			else
 				$save = 0;
+			else
+				$save = 1;
 		}else{
 			$save = 2;
 		}

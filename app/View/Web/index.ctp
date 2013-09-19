@@ -4,15 +4,10 @@
 <div id="central">
 	<div id="dato_evento" class="evento">
 		<section>
-			<h1>SOFTWARE FREE DAY<b> TACNA</b></h1>
-			<h2>21 de Septienbre</h2>
+			<h1>SOFTWARE FREEDOM DAY<b> TACNA</b></h1>
+			<h2>21 de Septiembre</h2>
 			<h3>9am-1pm</h3>
-				
-			<div id="descripcion">
-				<p> SFD es una celebración anual sobre el Software Libre! Cada año hay cientos de equipos organizando el Software Freedom Day en diferentes países y ciudades.
-				Organizar el evento de SFD puede ser muy divertido! En este sitio y en su wiki, encontrarás muchas guías y recursos que probablemente te ayuden a crear un equipo para organizar el evento de Software Freedom Day. </p> 
-			</div>
-			<h3>Lugar: Centro Cultural municipal alto de la alianza</h3>
+			<h1>LUGAR: <br/> Centro Cultural Municipal Alto de la Alianza</h1>
 		</section>
 	</div>
 </div>
@@ -26,7 +21,7 @@
 		<div id="botones">
 		  	<INPUT id="email" class="input01" NAME="data[Inscripto][email]" TYPE="text" required placeholder="Email" onfocus="javascript:box_actions.open()"/> 
 	      	<INPUT id="nombre" class="input01" NAME="data[Inscripto][nombre_completo]" TYPE="TEXT" required placeholder="Nombre" onfocus="javascript:box_actions.open()"/>
-	      	<INPUT id="dni" class="input01" NAME="data[Inscripto][dni]" TYPE="TEXT" required placeholder="Dni" />
+	      	<INPUT id="dni" pattern="\d{8}" maxlength="8" class="input01" NAME="data[Inscripto][dni]" TYPE="TEXT" required placeholder="Dni" />
 	      	<INPUT id="celular" class="input01" NAME="data[Inscripto][telefono]" TYPE="TEXT" required placeholder="Celular" />
 	      	<INPUT id="organizacion" class="input01" NAME="data[Inscripto][organizacion]" TYPE="TEXT" required placeholder="Organización/C. Estudio/Empresa" />
 	      	<div id="certificado">
@@ -57,12 +52,24 @@
 	</section>
 </div>
 <div id="cronograma">
-	<h3>CRONOGRAMA</h3>
-	<?php echo $this->Html->image("cronograma.png");?>
+	<h3>TEMARIO</h3>
+	<ul>
+		<li>Proyecto OLPC (Laptop por niño)</li>
+		<li>COMPUTACIÓN FISICA</li>
+		<li>Programación Arduino con Python</li>
+		<li>Software Libre para la Educación</li>
+		<li>Software Libre para la Gestión Pública</li>
+		<li>Desarrollando aplicaciones móviles para Android y PhoneGAP</li>
+		<li>Animación 3D con Blender</li>
+		<li>Computación Interactiva con SCRATCH</li>
+		<li>Feria tecnológica EXPO FREE - Cultura informática libre</li>
+		<li>Mesa Redonda.</li>
+	</ul>
+	<?php //echo $this->Html->image("cronograma.png");?>
 </div>
 <div id="lugar">
 	<h3>LUGAR</h3>
-	<p>El Evento se Desarrolllará en el <strong>CENTRO CULTURAL MUNICIPAL ALTO DE LA ALIANZA </strong><br />el Sábado 21 de Septiembre desde las 9 am hasta las 8 pm.
+	<p>El Evento se Desarrolllará en el <strong>CENTRO CULTURAL MUNICIPAL ALTO DE LA ALIANZA </strong><br />el Sábado 21 de Septiembre desde las 09:00am hasta las 06:00pm
 	</p>
 	<iframe width="547" height="312" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.pe/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=centro+cultural+tacna+vigil&amp;aq=&amp;sll=-17.993986,-70.244476&amp;sspn=0.001472,0.002642&amp;t=m&amp;ie=UTF8&amp;hq=centro+cultural&amp;hnear=Vigil,+Tacna&amp;ll=-17.993826,-70.244533&amp;spn=0.003571,0.00456&amp;z=17&amp;output=embed"></iframe>
 	<?php echo $this->Html->image('lugar.png');?>

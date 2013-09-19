@@ -33,7 +33,7 @@ nav{
 }
 #dato_evento{
 	background: transparent;
-	width: 50%;
+	width: 55%;
 	text-align: center;
 	display: inline-block;
 }
@@ -105,12 +105,15 @@ nav{
 	margin: 0 auto;
 	display: inline-table;
 }
+#cronograma ul li, #info section p{
+	font-family: 'Istok Web', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
 #info section p{
 	margin:0;
-	font-family: 'Istok Web', sans-serif;
 	text-align: justify;
 	padding: 15px;
-	font-size: 16px;
 	color: #797979;
 }
 #imagen_evento{
@@ -157,6 +160,9 @@ nav{
 }
 #lugar img{
 	width: 350px;
+}
+#cronograma{
+	background: #FAA518;
 }
 #cronograma img{
 	width: 80%;
@@ -327,7 +333,8 @@ display: inline-block;
 	background: #7E7E7E;
 }
 #result {
-	width: 126px;
+	/*width: 126px;*/
+	margin-top: 12px;
 	padding: 10px;
 	text-align: center;
 	font-size: 12px;
