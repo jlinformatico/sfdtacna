@@ -66,7 +66,6 @@ class InscriptosController extends AppController{
 	}
 
 
-
 }
 
 ?>

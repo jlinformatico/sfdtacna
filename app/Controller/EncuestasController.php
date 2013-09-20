@@ -20,7 +20,7 @@ class EncuestasController extends AppController {
 
 	public function encuesta_add() {
 		if ($this->request->is('post')) {
-			$this->request->data['Encuesta']['usuario_id'] = 2;
+			$this->request->data['Encuesta']['usuario_id'] = 1;
 			$this->request->data['Encuesta']['fecha_creacion'] = $this->fecha_hora();
 			$this->Encuesta->create();
 			if ($this->Encuesta->save($this->request->data)) {
