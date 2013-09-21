@@ -101,6 +101,7 @@
 	<?php echo $this->Html->link($this->Html->image("patrocinan/coyotex.png",array('width'=>350)),"#",array('escape'=>false));?>
 	<?php echo $this->Html->link($this->Html->image("patrocinan/super_stereo.png",array('width'=>220)),"#",array('escape'=>false));?>
 	<?php echo $this->Html->link($this->Html->image("patrocinan/idw.png",array('width'=>220)),"http://www.idw.com.pe/inicio/",array('escape'=>false));?>
+	<?php echo $this->Html->link($this->Html->image("patrocinan/ivica.png",array('width'=>220)),"#",array('escape'=>false));?>
 </div>
 <div id="facebook">
 	<h3>BÚSCANOS EN FACEBOOK</h3>
